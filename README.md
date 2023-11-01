@@ -9,6 +9,7 @@ De cada usuario se debe guardar su nombre y apellidos, así como su dirección p
 Cada cuenta de usuario tiene asociada una cesta o «carro de la compra virtual», en el que el usuario puede ir añadiendo artículos que desea comprar. Este puede adquirir varias unidades de un mismo artículo, especificándolo al añadirlo al carro. En este punto, no se comprobarán las existencias de dichos artículos, pudiéndose añadir cuantas unidades se desee.
 
 ### Diagrama de clases de los casos de uso 1 y 2
+![DIAGRAMA CU1 CU2](https://github.com/DavidCerdeiro/POO/blob/1fad038a271aebbc0487b8f010b5e12872f0d6dc/diagrama_cu1_cu2.jpg)
 
 ## Caso de uso 3
 #### Facturación de la compra a partir de los contenidos del carro
@@ -16,9 +17,11 @@ Cuando el usuario pasa a facturar la compra (checkout), el carro «se vacía» y
 #### Listado del histórico de compras
 Se permitirá listar todos los pedidos realizados hasta la fecha, ordenados y agrupados por nombre de artículo o fecha de compra, a elección del usuario, incluyendo la suma total de los importes de venta, bien sea por artículo o por fecha, según se elija. Nótese que debe contemplarse el hecho de que los precios de venta de los artículos pueden ser diferentes de sus precios actuales.
 ### Diagrama de clases del caso de uso 3
+![DIAGRAMA CU3](https://github.com/DavidCerdeiro/POO/blob/1fad038a271aebbc0487b8f010b5e12872f0d6dc/diagrama_cu3.jpg)
 ### Caso de uso 4
 Se pueden añadir al catálogo tres tipos de artículos: libros, revistas y libros digitales. Todos ellos tienen un código de referencia interno, un precio actual, un título y una fecha de publicación, pero solo de los libros y revistas hay que almacenar el número de artículos disponibles (sus existencias o stock), ya que los libros digitales se distribuyen mediante su descarga a través de Internet. De todos los artículos también se guardan los autores, que puede ser uno o varios, y que se emplearán como criterio de búsqueda. Los libros digitales tienen además una fecha de expiración en la que dejan de venderse, ya que se consideran obsoletos. De los libros se almacena el número de páginas, y de las revistas, su número y periodicidad.
 ### Diagrama de clases del caso de uso 4
+![DIAGRAMA CU3](https://github.com/DavidCerdeiro/POO/blob/1fad038a271aebbc0487b8f010b5e12872f0d6dc/diagrama_cu4.jpg)
 
 Para esto, aparte de las clases indicadas en los casos de uso, que se declaran en *P4*, en *P1* se definen las siguientes clases:
 ### Clase Cadena
